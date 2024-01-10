@@ -14,7 +14,7 @@ function countDown() {
     const mins = Math.floor((totalSeconds % (60 * 60)) / 60);
     const seconds = Math.floor(totalSeconds % 60);
 
-    if( days === 0 && hours === 0 && mins === 0 && seconds === 0){}
+    if( days < 0 || hours < 0 || mins < 0 || seconds < 0){}
     else {
     daysEl.innerHTML = formatTime(days);
     hoursEl.innerHTML = formatTime(hours);
